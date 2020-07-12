@@ -1,0 +1,772 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <style>
+        h2 {
+            font-size: 40px;
+            color: #E75B1E;
+            font-family: "Roboto", sans-serif;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1200px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 22px;
+            padding: 8px 12px;
+            position: absolute;
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.5);
+            /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active1 {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .inner {
+            padding: 0 1.25rem;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .list {
+            display: flex;
+        }
+
+        .tablink {
+            background-color: #FFB266;
+            color: black;
+            float: left;
+            border: bold;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .tablink:hover {
+            background-color: #FF8C00;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            color: black;
+            display: none;
+            padding: 50px;
+            text-align: left;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row1 {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row1,
+        .row1>.column {
+            padding: 8px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active1 {
+            background-color: #666;
+            color: white;
+        }
+
+        .column1 {
+            float: left;
+            width: 50%;
+
+        }
+
+        hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 2px;
+        }
+
+        .button3:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #FF8C00;
+        }
+
+        .button3 {
+            background-color: #FF8C00;
+            color: white;
+            font-size: 18px;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #FFE5CC;
+            color: Black;
+            transform: rotateY(180deg);
+        }
+
+        /* Style the tab */
+        .tab1 {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: white;
+            width: 30%;
+            height: 450px;
+            margin-left: 100px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab1 button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 13px 13px;
+            width: 100%;
+            border: bold;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab1 button:hover {
+            background-color: darkgray;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab1 button.active {
+            background-color: #FF8C00;
+        }
+
+        /* Style the tab content */
+        .tabcontent1 {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 50%;
+            border-left: none;
+            height: 450px;
+            display: none;
+            background-color: white;
+        }
+        
+        
+         .dropdown1 {
+
+            overflow: hidden;
+        }
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: lightgray;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown1 .dropbtn1 {
+            margin-top: 43px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: none;
+            color: white;
+            letter-spacing: 1.6px;
+            position: relative;
+            -webkit-transition: color 0.4s;
+            transition: color 0.4s;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .dropdown-content1 a {
+            float: none;
+            color: balck;
+            padding: 8px 2px 2px 20px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            display: block;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-size: 15px;
+
+        }
+
+        .dropdown-content1 a:hover {
+            background-color: white;
+        }
+
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="site-header">
+        <header id="header" class="header-block-top" style="background-color:#404040">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img style="width:90px;height:90px;" src="images/b735018a-5240-4f92-b5e5-68e0f0288308_200x200.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="FinalVs.html">Stats</a></li>
+                                    <li><a href="">News</a></li>
+                                    <div class="dropdown1">
+                                        <button class="dropbtn1">Interaction
+                                            <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content1">
+                                            <a href="DrugInteraction.html">Drug</a>
+                                            <a href="DiseaseInteraction.html">Disease</a>
+                                            <a href="AlcoholInteraction.html">Alcohol</a>
+                                            <a href="Lifestyle.html">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+
+    <section style="background-image:none;background:#E6E6E6;margin-left:1%;margin-right: 1%">
+        <div class="firstPart">
+            <div class="row">
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <h2>Lifestyle and Medicine</h2>
+                    <p>
+                        Do you know that some medicine could have adverse interactions with food consumption and physical exercise?<br><br>
+                        There could also be side effects caused by the interactions between food-medicine and exercise-medicine with unpredictable consequences.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <img src="img/apple.png" alt="Medicine Picture" style="width:100%;height:40vh;">
+                </div>
+            </div>
+        </div>
+
+        <div class="secondPart">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <img src="img/food.png" alt="Food Picture" style="width:100%; height:40vh;">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <h2>Food and Medicine Interaction</h2>
+                    <p>
+                        Some food may change the medicine effects and cause harm to the user 's body.
+                        <br><br>Below are some dangerous combinations between food and medicine.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="bg-light text-center" style="color: black;background:white;width:90%;margin-top:10%;margin-left:5%">
+            <button class="tablink" onclick="openTab('Heart Disease', this, '#D3D3D3')" id="defaultOpen">Vitamin K & Warfarin</button>
+            <button class="tablink" onclick="openTab('Diabetes', this, '#D3D3D3')">Tyramine & Monoamine Oxidase</button>
+            <button class="tablink" onclick="openTab('Influenza', this, '#D3D3D3')">Calcium-rich Foods & Antibiotics</button>
+            <button class="tablink" onclick="openTab('Grapefruit', this, '#D3D3D3')">Grapefruit Interaction</button>
+
+
+
+            <div id="Heart Disease" class="tabcontent" style="border-color:black"><br><br>
+                <h3 style="font-size:18px">Certain food with high amount of vitamin K can reduce the effectiveness of warfarin medicine. There are other critical risks listed below:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Increase the possibility of stroke</li>
+                    <li>Increase the possibility of heart attack</li>
+                </ul>
+                <h3 style="font-size:18px">Examples of high vitamin K food:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Kale</li>
+                    <li>Spinach</li>
+                    <li>Turnips</li>
+                    <li>Brussels sprouts</li>
+                </ul>
+
+            </div>
+
+
+            <div id="Diabetes" class="tabcontent"><br><br>
+                <h3 style="font-size:18px">Tyramine-containing foods & monoamine oxidase is a bad combination with the following risks:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Hypertensive crises</li>
+                    <li>Dangerous increases of blood pressure</li>
+                </ul>
+                <h3 style="font-size:18px;margin-right: :20%">Examples of tyramine-containing foods:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Red wine</li>
+                    <li>Malt beer</li>
+                    <li>Aged cheese</li>
+                    <li>Dried fruits</li>
+                </ul>
+            </div>
+
+            <div id="Influenza" class="tabcontent"><br><br>
+                <h3 style="font-size:18px">Antibiotics like tetracycline, doxycycline, and ciprofloxacin may be affected by dairy products with the following risks:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Antibiotics may bind to calcium in milk, forming an insoluble substance in the stomach and upper small intestine that the body cannot absorb.</li>
+                </ul>
+                <h3 style="font-size:18px">Examples of calcium-rich foods:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Milk</li>
+                    <li>Yogurt</li>
+                    <li>Cheese</li>
+                </ul>
+
+            </div>
+
+            <div id="Grapefruit" class="tabcontent" style="border-color:black"><br><br>
+                <h3 style="font-size:18px">Potential risks of grapefruit & statins:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Muscle soreness </li>
+                    <li>Liver abnormalities</li>
+                </ul>
+                <h3 style="font-size:18px">Potential risks of grapefruit & calcium channel blockers:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>High blood pressure</li>
+                </ul>
+                <h3 style="font-size:18px">Potential risks of grapefruit & erectile dysfunction drugs:</h3>
+                <ul style="font-size:16px;margin-left:20px">
+                    <li>Headaches with fatal or near-fatal risks</li>
+                    <li>Flushing </li>
+                    <li>Low blood pressure</li>
+                </ul>
+
+
+            </div>
+
+        </section>
+
+
+
+        <div class="thirdPart">
+            <div class="row">
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <h2> Exercise and Medicine Interaction</h2>
+                    <p>
+                        The physiological changes caused by exercise may change the absorption, distribution, metabolism and elimination of certain drugs for common diseases.<br><br>The following list shows the types of medications you should be aware of when doing physical exercise.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10" style="margin-top:10%;margin-left:5%">
+                    <img src="img/excercise.png" alt="Food Picture" style="width:100%; height:40vh;">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="checkList" style="margin-top: 5%;margin-bottom: 3%">
+            <button onclick="document.getElementById('popup').style.display='block'" style="width:100%">Click to see the check list</button>
+            <div id="popup" style="display:none">
+                <table style="width:100%;border:1px solid black;text-align: center">
+                    <tr>
+                        <th>Medicine Type</th>
+                        <th>Possible Consequences of Medicine and Exercise Interaction</th>
+                    </tr>
+                    <tr>
+                        <td>Antidepressant</td>
+                        <td>Extreme fatigue,
+                            low motivation,
+                            increases the likelihood of self-harm.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sleeping Pill</td>
+                        <td>Cause hangovers during the day,
+                            make you feel groggy and drowsy,
+                            increase the likelihood of self-harm.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Diabetes Medication</td>
+                        <td>Lower blood sugar to a dangerous level.</td>
+                    </tr>
+                    <tr>
+                        <td>Fluoroquinolone Antibiotics</td>
+                        <td>Lead to painful inflammation and/or tendon tears, 
+                            increase the likelihood of tendon rupture.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oral Decongestants</td>
+                        <td>Raise heart rate or blood pressure,
+                            make you feel tired and may cause injury during exercise faster than usual, 
+                            increase risk of heart disease or arrhythmias like irregular heartbeats.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Opioid Pain Relievers and Muscle Relaxants</td>
+                        <td>Prevent your nerves from telling your brain when you are in pain, 
+                            increase the likelihood of self-harm.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anabolic Steroids</td>
+                        <td>Overuse of these drugs to support exercise may lead to:
+                            cardiovascular disease,
+                            sudden cardiac death,
+                            myocardial infarction,
+                            liver problems,
+                            tumors and other types of injury, 
+                            tendon rupture,
+                            osteoporosis,
+                            bone loss.
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="document.getElementById('popup').style.display='none'">Hide</button>
+            </div>
+        </div>
+    </section>
+
+    <!----footer section ------>
+    <div id="footer" class="footer-main">
+        <div class="footer-box pad-top-70" style="margin-left: 1%;margin-right: 1%">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <!----About us section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>This website aims to enhance awareness regarding accidental poisoning by drug overdose.
+                                    <br> The website assumes no responsibility and accepts no liability for content of other websites.
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+
+                        <!----References section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>References</h3>
+                                <ul>
+                                    <li><a href="https://www.abc.net.au/news/health/2019-08-27/accidental-drug-overdoses-forecast-to-reach-record-high/11450764">ABC News Melbourne</a></li>
+                                    <li><a href="https://www.abs.gov.au/ausstats/abs@.nsf/Products/9477E1236741AA01CA2576F60012445B?opendocument">Australian Bureau of Statistics (ABS)</a></li>
+                                    <li><a href="https://www.pexels.com/search/background%20medicines/">Pictures powered by ©Pexels</a></li>
+                                    <li><a href="https://www.medicalnewstoday.com/">Medicine news today</a></li>
+                                    <li><a href="https://www.goodrx.com/">GoodPx</a></li>
+                                    <li><a href="https://www.healthline.com/">Healthline</a></li>
+                                    <li><a href="http://www.penington.org.au/">Australia Annual Overdose Report 2019 by Penington Institute</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+
+                        <!----Website links section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Websites</h3>
+                                <ul>
+                                    <li><a href="https://www.aihw.gov.au/search?%7B%22SearchText%22:%22drug%20overdose%22%7D">Australian institute of health and welfare (AIHW)</a></li>
+                                    <li><a href="https://www.drugpolicy.org.au/pill_testing_campaign">Drug Policy Australia</a></li>
+                                    <li><a href="https://adf.org.au/alcohol-drug-use/young-people/">© Alcohol and Drug Foundation 2018 </a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                    </div>
+                    <!-- footer-main -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-box -->
+        <div id="copyright" class="copyright-main" style="margin-left: 1%;margin-right: 1%;margin-top:0%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h6 class="copy-title"> Copyright &copy; 2019 Accidental poisoning is powered by TARLY<a href="#" target="_blank"></a> </h6>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end copyright-main -->
+    </div>
+    <!-- end footer -->
+
+    <script>
+        function openTab(Name, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(Name).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+    </script>
+
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

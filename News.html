@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Api</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+      
+        <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+ 
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+      <Style>
+      .dropdown1 {
+
+          overflow: hidden;
+        }
+
+        .dropdown1 .dropbtn1 {
+            margin-top:43px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            background-color: transparent;
+            border:none;
+            color:white;
+            letter-spacing: 1.6px;
+            position:relative;
+            -webkit-transition: color 0.4s;
+            transition: color 0.4s;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+
+        .dropdown-content1 {
+          display: none;
+          position: absolute;
+          background-color: lightgray;
+          min-width: 150px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content1 a {   
+          float: none;
+          color:balck;
+          padding: 8px 2px 2px 20px;   
+          text-decoration: none;
+          letter-spacing: 0.5px;
+          display: block;
+          text-align: left;
+          font-family: 'Roboto', sans-serif;
+          text-transform: uppercase;
+          font-size:15px;
+
+        }
+
+        .dropdown-content1 a:hover {
+          background-color: white;
+        }
+
+        .dropdown1:hover .dropdown-content1 {
+          display: block;
+
+        }
+          </Style>
+  </head>
+    
+  <body>
+    
+   <div id="site-header">
+        <header id="header" class="header-block-top" style="background-color:#404040">
+            <div class="container" >
+                <div class="row" >
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="index.html">
+                                        <img style="width:90px;height:90px;" src="images/b735018a-5240-4f92-b5e5-68e0f0288308_200x200.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="FinalVs.html">Stats</a></li>
+                                    <li><a href="">News</a></li>
+                                    <div class="dropdown1">
+                                        <button class="dropbtn1">Interaction 
+                                        <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content1">
+                                          <a href="DrugInteraction.html">Drug</a>
+                                          <a href="DiseaseInteraction.html">Disease</a>
+                                          <a href="AlcoholInteraction.html">Alcohol</a>
+                                         <a href="Lifestyle.html">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>  
+        
+      
+
+     
+         <div style="margin-top:300px" id="newsResults"></div>
+          
+          
+  
+      
+    
+
+
+      
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="iconChanger.js"></script>
+<script src="newsapi.js"></script>
+  
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,485 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+    <!--Canvasjs Library-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <Style>
+        .dropdown1 {
+
+            overflow: hidden;
+        }
+
+        .dropdown1 .dropbtn1 {
+            margin-top: 43px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: none;
+            color: white;
+            letter-spacing: 1.6px;
+            position: relative;
+            -webkit-transition: color 0.4s;
+            transition: color 0.4s;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: lightgray;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content1 a {
+            float: none;
+            color: balck;
+            padding: 8px 2px 2px 20px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            display: block;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-size: 15px;
+
+        }
+
+        .dropdown-content1 a:hover {
+            background-color: white;
+        }
+
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+
+        }
+
+        .btn,
+        .btn-large,
+        .btn-small {
+            text-decoration: none;
+            color: #fff;
+            background-color: #26a69a;
+            text-align: center;
+            letter-spacing: .5px;
+            -webkit-transition: background-color .2s ease-out;
+            transition: background-color .2s ease-out;
+            cursor: pointer;
+        }
+
+        h4 {
+            font-size: 30px;
+            font-family: "Roboto"sans-serif;
+        }
+
+    </Style>
+</head>
+
+<div id="site-header">
+    <header id="header" class="header-block-top" style="background-color:#404040">
+        <div class="container">
+            <div class="row">
+                <div class="main-menu">
+                    <!-- navbar -->
+                    <nav class="navbar navbar-default" id="mainNav">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                <a class="navbar-brand js-scroll-trigger logo-header" href="index.html">
+                                    <img style="width:90px;height:90px;" src="images/b735018a-5240-4f92-b5e5-68e0f0288308_200x200.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                             <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="FinalVs.html">Stats</a></li>
+                                    <li class="active"><a href="">News</a></li>
+                                    <div class="dropdown1">
+                                        <button class="dropbtn1">Interaction 
+                                        <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content1">
+                                          <a href="DrugInteraction.html">Drug</a>
+                                          <a href="DiseaseInteraction.html">Disease</a>
+                                          <a href="AlcoholInteraction.html">Alcohol</a>
+                                         <a href="Lifestyle.html">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                        </div>
+                        <!-- end nav-collapse -->
+                    </nav>
+                    <!-- end navbar -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container-fluid -->
+    </header>
+    <!-- end header -->
+</div>
+
+<body>
+    <section style="background-image:none;background:#E6E6E6;margin-left:1%;margin-right: 1%">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-top:10%">
+                        <div class="news1" style="margin-top: 17%;margin-bottom: 2%">
+                            <h4>Is that supplement safe to take? This AI tool scours research to find out</h4>
+                            <img src="https://techcrunch.com/wp-content/uploads/2019/09/brain_pills.jpg?w=534" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Dietary supplements are used by millions who accept the occasionally scarce evidence they help out with some condition or another. But also scarce is documentation of potential harmful interactions with other supplements or drugs. A new tool called Supp.ai lo…</p>
+                            <p>Dietary supplements are used by millions who accept the occasionally scarce evidence they help out with some condition or another. But also scarce is documentation of potential harmful interactions with other supplements or drugs. A new tool called Supp.ai lo… [+3740 chars]</p>
+                            <p>Published on: 2019-09-19T16:43:25Z</p>
+                            <a href="http://techcrunch.com/2019/09/19/is-that-supplement-safe-to-take-this-ai-tool-scours-research-to-find-out/" class="btn" target="_blank">Read more</a>
+
+
+                        </div>
+
+                        <div class="news2" style="margin-top: 12%;margin-bottom: 2%">
+                            <h4>Grapefruit-drug interactions</h4>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Grapefruit_Juice_and_Medicine_May_Not_Mix_%286774935740%29.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <div class="textcontent2" style="height:30%">
+                                <p>Comments</p>
+                                <p>Some fruit juices and fruits can interact with numerous drugs, in many cases causing adverse effects.[1] The effect was first discovered accidentally, when a test of drug interactions with alcohol used grapefruit juice to hide the taste of the ethanol.[2]
+                                    Th… [+41040 chars]</p>
+                                <p>Published on: 2019-09-27T22:45:02Z</p>
+                                <a href="https://en.wikipedia.org/wiki/Grapefruit%E2%80%93drug_interactions" class="btn" target="_blank">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="news3" style="margin-top: 28%;margin-bottom: 2%">
+                            <h4>Pfizer launches pilot with home robot Mabu to study patient response to AI</h4>
+                            <img src="https://venturebeat.com/wp-content/uploads/2018/10/IMG_4006-e1538535936971.jpg?w=1200&amp;strip=all" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Pfizer is working with the maker of Mabu, a home robot that helps patients with chronic illnesses manage symptoms and take their medication.</p>
+                            <p>Pharmaceutical giant Pfizer today announced plans to launch a one-year pilot program with robotics company Catalia Health, maker of Mabu, a home robot that coaches patients on health and prescription drugs.
+                                Mabu uses voice interactions powered by conversatio… [+1614 chars]</p>
+                            <p>Published on: 2019-09-12T13:00:42Z</p>
+                            <a href="https://venturebeat.com/2019/09/12/pfizer-launches-pilot-with-home-robot-mabu-to-study-patient-response-to-ai/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+
+                        <div class="news4" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Prescription drugs and grapefruit a 'deadly mix' (2012)</h4>
+                            <img src="https://www.nhs.uk/static/nhsuk_behind_the_headlines/img/open-graph.b2674bec1a4b.png" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>'A breakfast of grapefruit and marmalade on toast could be lethal for people taking medication' is the alarming warning in the Daily Mail. It is prompted by a review highlighting the potential for over 80 drugs to interact with the fruit…</p>
+                            <p>A breakfast of grapefruit and marmalade on toast could be lethal for people taking medication is the headline in the Daily Mail.
+                                The news is based on a review that has highlighted grapefruit-medication interactions that can cause serious side effects.
+                                It … [+8549 chars]</p>
+                            <p>Published on: 2019-09-27T22:45:02Z</p>
+                            <a href="https://www.nhs.uk/news/medication/prescription-drugs-and-grapefruit-a-deadly-mix/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news5" style="margin-top: 32%;margin-bottom: 2%">
+                            <h4>Should you keep eating red meat? - Jordan Times</h4>
+                            <img src="null" class="responsive-img" style="100%;margin-top: 1%;height:30%">
+                            <p>By Ryan W. MillerShould you stop eating red meat for health reasons?That’s the question rocking the nutrition and scientific community after guidelines published in a peer-reviewed journal said people should continue eating red meat, running counter to what m…</p>
+                            <p>By Ryan W. Miller
+                                Should you stop eating red meat for health reasons?
+                                Thats the question rocking the nutrition and scientific community after guidelines published in a peer-reviewed journal said people should continue eating red meat, running counter to wha… [+6114 chars]</p>
+                            <p>Published on: 2019-10-06T19:53:15Z</p>
+                            <a href="https://www.jordantimes.com/news/features/should-you-keep-eating-red-meat" class="btn" target="_blank">Read more</a>
+                        </div>
+
+
+                        <div class="news6" style="margin-top: 5%;margin-bottom: 2%">
+                            <h4>Samuel Little Has Confessed To Strangling 93 Women, FBI Says</h4>
+                            <img src="https://img.huffingtonpost.com/asset/5d9c29142100003d07abec7b.png?cache=EBLzYIIEBG&amp;ops=1200_630" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Little has confessed to strangling 93 women. The FBI has verified at least 50 of the claims and believes all of Little's confessions are "credible."</p>
+                            <p>Samuel Little, a 79-year-old convicted murderer who’s confessed to strangling more than 90 women, is the most prolific serial killer in American history, the FBI says.&nbsp;
+                                The FBI&nbsp;said in a Sunday statement that it had verified at least 50 of the 93 slayings Li… [+3081 chars]</p>
+                            <p>Published on: 2019-10-08T10:54:03Z</p>
+                            <a href="https://www.huffpost.com/entry/samuel-little-most-prolific-serial-killer-fbi_n_5d9c0e4ee4b0993898055ccf" class="btn" target="_blank">Read more</a>
+                        </div>
+
+
+                        <div class="news-left-add" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Cannabis</h4>
+                            <img src="" class="responsive-img">
+                            <p>How much do we really know about the effectiveness of cannabis in treating chronic pain?</p>
+                            <p>Many states in this country have legalized medical marijuana. A number have recently legalized recreational marijuana. Maine is one of those. As I pointed out in a previous blog, the medicinal use of marijuana has been around for some time. Cannabis Americano… [+2211 chars]</p>
+                            <p>Published on: 2019-09-17T12:41:02Z</p>
+                            <a href="https://www.psychologytoday.com/us/blog/in-the-face-adversity/201909/cannabis" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10" style="margin-top:10%">
+                        <div class="news7" style="margin-top: 17%;margin-bottom: 2%">
+                            <h4>Shapeshifting receptors may explain mysterious drug failures and </h4>
+                            <img src="https://scx2.b-cdn.net/gfx/news/hires/2019/receptor.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+
+                            <p>For sugar to taste sweet and for coffee to be stimulating, or even for light to be seen, first they all need to land on a G protein-coupled receptor. Ubiquitous and diverse, these receptors are a cell's chemical detection system: they sense substances in the …</p>
+                            <p>For sugar to taste sweet and for coffee to be stimulating, or even for light to be seen, first they all need to land on a G protein-coupled receptor. Ubiquitous and diverse, these receptors are a cell's chemical detection system: they sense substances in the … [+6134 chars]</p>
+                            <p>Published on: 2019-10-07T11:17:28Z</p>
+                            <a href="https://phys.org/news/2019-10-shapeshifting-receptors-mysterious-drug-failures.html" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news8" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>2-part cancer drug works without kidney side effects</h4>
+                            <img src="https://www.futurity.org/wp/wp-content/uploads/2019/10/gloved-two-fingers_1600.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>A new drug could be an effective alternative to cisplatin, a popular anti-cancer drug that also causes kidney issues.</p>
+                            <p>A new anti-cancer drug has less toxic effects on the kidneys than current drugs do, researchers report.
+                                The new drug works like a “magic bullet” that goes directly to cancer cells’ mitochondriathe power generators of cells. Once the drug reaches the tumor, t… [+3748 chars]</p>
+                            <p>Published on: 2019-10-04T19:00:32Z</p>
+                            <a href="https://www.futurity.org/cancer-drug-cisplatin-side-effects-2177762/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news9" style="margin-top:10%;margin-bottom: 2%">
+                            <h4>Chemists clarify a chiral conundrum</h4>
+                            <img src="null" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Researchers set out to untangle the mysterious interactions in mixtures of proteins and gold nanorods. Their experiments revealed multilevel chirality in the way proteins prompt nanoparticles to align and in how the particles' plasmons respond to light in the…</p>
+                            <p>It's always good when your intuition turns out to be right, but scientists at Rice University studying proteins and particles were more "right" than they expected.Rice chemists Christy Landes and Stephan Link and lead author and Smalley-Curl Postdoctoral Fell… [+5927 chars]</p>
+                            <p>Published on: 2019-09-26T18:17:31Z</p>
+                            <a href="https://www.sciencedaily.com/releases/2019/09/190926141731.htm" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news10" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Should you keep eating red meat? Controversial study says well-known health risks are just bad science</h4>
+                            <img src="https://www.gannett-cdn.com/-mm-/e2d270b9efe4517242afaed0fb1542347c8a15ae/c=0-127-580-453/local/-/media/2018/08/02/USATODAY/usatsports/MotleyFool-TMOT-37c7433a-beef_large.jpg?width=3200&amp;height=1680&amp;fit=crop" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>A study from the NutriRECS group published in the Annals of Internal Medicine urged adults to keep eating red meat. Doctors are now pushing back.</p>
+                            <p>Even vegetarians can rejoice over these new types of meat hitting the market. Here's why.
+                                Just the FAQs, USA TODAY
+                                Story Highlights
+                            </p>
+                            <ul>
+                                <li>A new report suggests longstanding guidelines that red meat is bad for your health may not be true.</li>
+                                <li>The stu… [+7080 chars]<p></p>
+                                    <p>Published on: 2019-10-02T14:18:15Z</p>
+                                    <a href="https://www.usatoday.com/story/news/health/2019/10/02/red-meat-study-known-health-risks-unfounded-doctors-decry-guidelines/3838947002/?utm_source=google&amp;utm_medium=amp&amp;utm_campaign=speakable" class="btn" target="_blank">Read more</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="news11" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Brain’s ‘push-pull’ can control drug-resistant seizures</h4>
+                            <img src="https://www.futurity.org/wp/wp-content/uploads/2019/09/tug-of-war-illustration-on-blue_1600.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>New findings about how seizures spread in the brain could help pave the way for controlling certain seizures that resist treatment.</p>
+                            <p>The amount of pressure in the brain can regulate focal seizures, the kind that originate at a single point, according to new research.
+                                The finding may revolutionize the treatment of drug-resistant epilepsy.
+                                Epilepsy is one of the most common neurological di… [+3410 chars]</p>
+                            <p>Published on: 2019-09-30T15:56:33Z</p>
+                            <a href="https://www.futurity.org/focal-seizures-brain-pressure-2172552/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news12" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Unravelling the mystery of opioid addiction</h4>
+                            <img src="https://media.nature.com/lw1024/magazine-assets/d41586-019-02690-6/d41586-019-02690-6_17145804.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>To help solve the opioid epidemic, researchers must understand what makes dependence on these drugs so deadly.</p>
+                            <p>Aldo Badiani (right) at the University of Sussex, UK, discussing an electrophysiology experiment.Credit: University of Sussex
+                                The latest edition of the Diagnostic and Statistical Manual of Mental Disorders recognizes only two types of addiction: gambling and… [+11649 chars]</p>
+                            <p>Published on: 2019-09-11T00:00:00Z</p>
+                            <a href="https://www.nature.com/articles/d41586-019-02690-6?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+nature%2Frss%2Fcurrent+%28Nature+-+Issue%29" class="btn" target="_blank">Read more</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10" style="margin-top:10%">
+                        <div class="news13" style="margin-top: 17%;margin-bottom: 2%">
+                            <h4>Racial discrimination in childhood may speed aging</h4>
+                            <img src="https://www.futurity.org/wp/wp-content/uploads/2019/10/mother-and-daughter-on-bed2_1600.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Experiencing racial discrimination early in life puts African-American youth at greater risk of accelerated aging, which could signal health issues to come.</p>
+                            <p>Early life stress from racial discrimination puts African Americans at greater risk for accelerated aging, a marker for premature development of serious health problems, and perhaps a shorter life expectancy, researchers report.
+                                For a new study in Health Psy… [+3679 chars]</p>
+                            <p>Published on: 2019-10-01T16:18:10Z</p>
+                            <a href="https://www.futurity.org/racial-discrimination-aging-2173402/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news14" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Could this nanorod discovery lead to purer meds?</h4>
+                            <img src="https://www.futurity.org/wp/wp-content/uploads/2019/10/chirality_1600.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>A common protein in nano-bio labs is prone to pushing gold nanorods into right-handed chiral assemblies—while producing chiral plasmonic signals to match.</p>
+                            <p>It may become possible to sense the handedness, or chirality, of single proteins, research suggests.
+                                That would be a boon for pharmaceutical companies that require drug purity. A molecule with the correct chirality can save a life, while the same molecule of… [+6288 chars]</p>
+                            <p>Published on: 2019-10-01T18:55:34Z</p>
+                            <a href="https://www.futurity.org/?p=2174122" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news16" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Here Are the Details Behind Ed Buck's Alleged Sexual and Drug Encounters in WeHo - WEHOville</h4>
+                            <img src="https://www.wehoville.com/wp-content/uploads/2017/08/Ed-Buck-meth-576x1024-e1503293313428.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Here Are the Details Behind Ed Buck's Alleged Sexual and Drug Encounters in WeHo WEHOville New York Times slammed as ‘disgusting’ for downplaying Ed Buck as ‘small time’ Democratic donor Fox News Prosecutors: At Least 10 Victims in Ed Buck Sex-and-Overdose Ca…</p>
+                            <p>The 22-page criminal complaint against Ed Buck filed in U.S. District Court on Wednesday includes an affidavit by an investigating officer that offers a long, detailed, and sexually explicit list of allegations against the West Hollywood resident including hi… [+1382 chars]</p>
+                            <p>Published on: 2019-09-20T17:47:45Z</p>
+                            <a href="https://www.wehoville.com/2019/09/20/here-are-the-details-behind-ed-bucks-alleged-sexual-and-drug-encounters-in-weho/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news17" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Potential diagnostic tool, treatment for Parkinson's disease</h4>
+                            <img src="null" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Investigators have pinpointed a molecular defect that seems almost universal among patients with Parkinson's disease and those at a high risk of acquiring it.</p>
+                            <p>Investigators at the Stanford University School of Medicine have pinpointed a molecular defect that seems almost universal among patients with Parkinson's disease and those at a high risk of acquiring it.The discovery could provide a way of detecting the neur… [+6226 chars]</p>
+                            <p>Published on: 2019-09-26T18:17:34Z</p>
+                            <a href="https://www.sciencedaily.com/releases/2019/09/190926141734.htm" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news18" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>No, Fish Oil Supplements Do Not Represent False Promise</h4>
+                            <img src="https://static.scientificamerican.com/blogs/cache/file/BFEEB967-9D49-4670-B19DEF986A701AF3.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>A recent Scientific American essay left out some crucial information -- Read more on ScientificAmerican.com</p>
+                            <p>Having had the privilege to introduce to the scientific community the benefits of omega-3 fatty acids in cardiovascular disease though my work on Greenland Inuits in the 1970s, I read with some concern the August 22, 2019, opinion piece entitled "The False Pr… [+6503 chars]</p>
+                            <p>Published on: 2019-09-30T13:00:00Z</p>
+                            <a href="https://blogs.scientificamerican.com/observations/no-fish-oil-supplements-do-not-represent-false-promise1/" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news19" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>4 health care questions, besides Medicare-for-all, every 2020 Democratic candidate should answer</h4>
+                            <img src="https://cdn.vox-cdn.com/thumbor/i9WOJtpD7sKxLqkUUCFjAnS6b3c=/0x223:3100x1846/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19191031/GettyImages_1166231693.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>The Democratic debates have been dominated by Medicare-for-all. But there is a lot more to cover.</p>
+                            <p>The 2020 Democratic presidential debates have been dominated by Medicare-for-all. But there are a lot of other health care issues worth talking about. | Erik McGregor/LightRocket via Getty Images The Democratic debates have been dominated by Medicare-for-all.… [+8502 chars]</p>
+                            <p>Published on: 2019-09-12T13:55:04Z</p>
+                            <a href="https://www.vox.com/policy-and-politics/2019/9/12/20859515/september-democratic-debate-2020-presidential-candidates-health-care" class="btn" target="_blank">Read more</a>
+                        </div>
+
+                        <div class="news20" style="margin-top: 10%;margin-bottom: 2%">
+                            <h4>Jonathan Van Ness On Revealing He Is HIV Positive: 'I Do Feel the Need to Talk About This'</h4>
+                            <img src="https://i.kinja-img.com/gawker-media/image/upload/s--CDznmNhg--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/gl9rhj4ouhp0qkilzj7u.jpg" class="responsive-img" style="width:100%;margin-top: 1%;height:30%">
+                            <p>Just before the September 24 release of his memoir, Over the Top, Jonathan Van Ness of Queer Eye sat down for an interview in which he discussed childhood sexual trauma, his history of drug use, and being diagnosed with HIV at 25. Read more...</p>
+                            <p>Just before the September 24 release of his memoir, Over the Top, Jonathan Van Ness of Queer Eye sat down for an interview in which he discussed childhood sexual trauma, his history of drug use, and being diagnosed with HIV at 25.
+                                In an interview with the Ne… [+2316 chars]</p>
+                            <p>Published on: 2019-09-21T18:00:00Z</p>
+                            <a href="https://jezebel.com/jonathan-van-ness-on-revealing-he-is-hiv-positive-i-do-1838314819" class="btn" target="_blank">Read more</a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!----footer section ------>
+    <div id="footer" class="footer-main">
+        <div class="footer-box pad-top-70" style="margin-left: 1%;margin-right: 1%">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <!----About us section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>This website aims to enhance awareness regarding accidental poisoning by drug overdose.
+                                    <br> The website assumes no responsibility and accepts no liability for content of other websites.
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+
+                        <!----References section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>References</h3>
+                                <ul>
+                                    <li><a href="https://www.abc.net.au/news/health/2019-08-27/accidental-drug-overdoses-forecast-to-reach-record-high/11450764">ABC News Melbourne</a></li>
+                                    <li><a href="https://www.abs.gov.au/ausstats/abs@.nsf/Products/9477E1236741AA01CA2576F60012445B?opendocument">Australian Bureau of Statistics (ABS)</a></li>
+                                    <li><a href="https://www.pexels.com/search/background%20medicines/">Pictures powered by ©Pexels</a></li>
+                                    <li><a href="https://www.medicalnewstoday.com/">Medicine news today</a></li>
+                                    <li><a href="https://www.goodrx.com/">GoodPx</a></li>
+                                    <li><a href="https://www.healthline.com/">Healthline</a></li>
+                                    <li><a href="http://www.penington.org.au/">Australia’s Annual Overdose Report 2019 by Penington Institute</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+
+                        <!----Website links section----->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Websites</h3>
+                                <ul>
+                                    <li><a href="https://www.aihw.gov.au/search?%7B%22SearchText%22:%22drug%20overdose%22%7D">Australian institute of health and welfare (AIHW)</a></li>
+                                    <li><a href="https://www.drugpolicy.org.au/pill_testing_campaign">Drug Policy Australia</a></li>
+                                    <li><a href="https://adf.org.au/alcohol-drug-use/young-people/">© Alcohol and Drug Foundation 2018 </a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                    </div>
+                    <!-- footer-main -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-box -->
+
+        <div id="copyright" class="copyright-main" style="margin-left: 1%;margin-right: 1%;margin-top:0%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h6 class="copy-title"> Copyright &copy; 2019 Accidental poisoning is powered by TARLY<a href="#" target="_blank"></a> </h6>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end copyright-main -->
+    </div>
+    <!-- end footer -->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/iconChanger.js"></script>
+    <script src="js/newsapi.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
